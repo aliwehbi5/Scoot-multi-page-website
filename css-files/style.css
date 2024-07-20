@@ -369,6 +369,7 @@ header .line {
 }
 .app {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 .app .detials {
