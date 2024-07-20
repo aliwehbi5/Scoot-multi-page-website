@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Damon" />
+    <meta name="description" content="" />
+    <!-- main style css -->
+    <link rel="stylesheet" href="css-files/style.css" />
+    <link rel="shortcut icon" href="logo.jpg" type="img/x-icon" />
+    <title>Scoot multi-page website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.onload = () => {
+        const questions = document.querySelectorAll(".question");
+        const questionDivs = document.querySelectorAll(".question-div");
+        questionDivs.forEach((question, index) => {
+          question.addEventListener("click", () => {
+            if (questions[index].classList.contains("show")) {
+              questions.forEach((question) => {
+                question.classList.remove("show");
+              });
+            } else {
+              questions.forEach((question) => {
+                question.classList.remove("show");
+              });
+              questions[index].classList.add("show");
+            }
+          });
+        });
+      };
+    </script>
+    <script
+      src="https://kit.fontawesome.com/533e5d4e51.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="about">
+    <nav>
+      <div class="content container">
+        <img
+          src="https://fluffy-tarsier-9926b4.netlify.app/assets/hamburger.c55de7ed.svg"
+          alt=""
+          class="hamburger"
+        />
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/logo.cfc9973f.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="left-part">
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+          <a href="#" class="main-btn">Get Scootin </a>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="content container">
+        <h1>About</h1>
+      </div>
+
+      <svg
+        class="balls"
+        xmlns="http://www.w3.org/2000/svg"
+        width="234"
+        height="63"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <circle
+            cx="31"
+            cy="31.5"
+            r="29.5"
+            stroke="#FFF"
+            stroke-width="3"
+            opacity="1"
+            pathLength="1"
+            stroke-dashoffset="0px"
+            stroke-dasharray="1px 1px"
+            transform-origin="31px 31.5px"
+            style="transform: none; transform-origin: 31px 31.5px"
+          ></circle>
+          <circle
+            cx="117"
+            cy="31.5"
+            r="29.5"
+            stroke="#FFF"
+            stroke-width="3"
+            opacity="1"
+            pathLength="1"
+            stroke-dashoffset="0px"
+            stroke-dasharray="1px 1px"
+            transform-origin="117px 31.5px"
+            style="transform: none; transform-origin: 117px 31.5px"
+          ></circle>
+          <circle
+            cx="203"
+            cy="31.5"
+            r="31"
+            fill="#FFF"
+            opacity="1"
+            pathLength="1"
+            stroke-dashoffset="0px"
+            stroke-dasharray="1px 1px"
+            transform-origin="203px 31.5px"
+            style="transform: none; transform-origin: 203px 31.5px"
+          ></circle>
+        </g>
+      </svg>
+    </div>
+    <section class="features">
+      <div class="feature">
+        <div class="content container">
+          <div class="feature-img">
+            <img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/digital-era.092d9f59.jpg"
+              alt=""
+            />
+            <svg
+              class="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="741"
+              height="151"
+            >
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FCB72B"
+                stroke-linejoin="bevel"
+                stroke-width="15"
+              >
+                <path d="M740.969 8H182.854v99.369H6.591"></path>
+                <path d="M44.64 145.64L6.214 107.214 44.64 68.787"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="feature-detials">
+            <h1>Mobility for the digital era</h1>
+            <p>
+              Getting around should be simple (and even fun!) for everyone. We
+              embrace technology to provide low cost, smart access to scooters
+              at your fingertips.
+            </p>
+          </div>
+        </div>
+        <svg
+          class="circle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="445"
+          height="445"
+        >
+          <circle
+            cx="302.5"
+            cy="222.5"
+            r="222.5"
+            fill="#E5ECF4"
+            fill-rule="evenodd"
+            transform="translate(-80)"
+          ></circle>
+        </svg>
+      </div>
+      <div class="feature reverse">
+        <div class="content container">
+          <div class="feature-img">
+            <img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/better-living.610dfcd1.jpg"
+              alt=""
+            />
+            <svg
+              class="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="452"
+              height="151"
+            >
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FCB72B"
+                stroke-linejoin="bevel"
+                stroke-width="15"
+              >
+                <path d="M407.952 145.444l38.426-38.426-38.426-38.426"></path>
+                <path d="M0 8h270.115v99.369h176.263"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="feature-detials">
+            <h1>Better urban living</h1>
+            <p>
+              We’re helping connect cities and bring people closer together. Our
+              scooters are also fully-electric and we offset the minimal carbon
+              footprint for each ride.
+            </p>
+          </div>
+        </div>
+        <svg
+          class="circle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="445"
+          height="445"
+        >
+          <circle
+            cx="302.5"
+            cy="222.5"
+            r="222.5"
+            fill="#E5ECF4"
+            fill-rule="evenodd"
+            transform="translate(-80)"
+          ></circle>
+        </svg>
+      </div>
+    </section>
+    <section class="values">
+      <h1 class="title">Our values</h1>
+      <div class="content container">
+        <div class="value">
+          <div class="img">
+            <img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/our-tech.e525de31.jpg"
+              alt=""
+            />
+          </div>
+          <h3>Our tech</h3>
+          <p>
+            We’re using cutting edge technology to drive accessible urban
+            transportation forward. Our fully electric scooters are a joy to
+            ride!
+          </p>
+        </div>
+        <div class="value">
+          <div class="img">
+            <img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/our-integrity.8b7fbc87.jpg"
+              alt=""
+            />
+          </div>
+          <h3>Our integrity</h3>
+          <p>
+            We are fully committed to deliver a great yet safe, sustainable
+            micro-mobility experience in every city we serve.
+          </p>
+        </div>
+        <div class="value">
+          <div class="img">
+            <img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/our-community.78c5c932.jpg"
+              alt=""
+            />
+          </div>
+          <h3>Our community</h3>
+          <p>
+            We support every community we serve. All workers are paid a living
+            wage based on their location and are Scoot employees.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="questions">
+      <h1 class="title">FAQs</h1>
+      <div class="content container">
+        <div class="first-question">
+          <h1>How it works</h1>
+          <div class="questions-div">
+            <div class="question show">
+              <div class="question-div">
+                <h2>How do I download the app?</h2>
+                <img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/chevron.934adfbd.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </p>
+            </div>
+            <div class="question">
+              <div class="question-div">
+                <h2>Can I find a nearby Scoots?</h2>
+                <img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/chevron.934adfbd.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Definitely! Simply open up the app and allow us to find your
+                location while using it. We'll show you all of the closest
+                Scoots and some extra useful information.
+              </p>
+            </div>
+            <div class="question">
+              <div class="question-div">
+                <h2>Do I need a license to ride?</h2>
+                <img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/chevron.934adfbd.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Yup! We provide information inside the app regarding local laws
+                and the license you need to be able to ride our Scoots.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="second-question">
+          <h1>Safe driving</h1>
+          <div class="questions-div">
+            <div class="question">
+              <div class="question-div">
+                <h2>Should I wear a helmet?</h2>
+                <img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/chevron.934adfbd.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Yes, please do! All cities have different laws. But we strongly
+                strongly strongly recommend always wearing a helmet regardless
+                of the local laws. We like you and we want you to be as safe as
+                possible while Scooting.
+              </p>
+            </div>
+            <div class="question">
+              <div class="question-div">
+                <h2>How about the rules & regulations?</h2>
+                <img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/chevron.934adfbd.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Now is not the time to be a rule breaker. Be sure you're
+                complying with all local laws and regulations. Also, just be a
+                good human being. Be sure not to park your Scoot where it can
+                block access to buildings or get in people's way.
+              </p>
+            </div>
+            <div class="question">
+              <div class="question-div">
+                <h2>What if I damage my Scoot?</h2>
+                <img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/chevron.934adfbd.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Be sure to read our terms and conditions carefully. Not the most
+                fun job we know but we make it as clear as possible. There's an
+                option to add insurance for each trip, or you can sign up for
+                annual insurance if you're a regular Scooter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="sign-up">
+      <div class="container content">
+        <h1>Sign up and Scoot off today</h1>
+        <div class="stores">
+          <a href="#"
+            ><img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/app-store-2.876b32ac.svg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/google-play-2.4c670d27.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="content container">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="https://fluffy-tarsier-9926b4.netlify.app/assets/logo.cfc9973f.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="left-part">
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+          <ul class="socials">
+            <li>
+              <a href="#"
+                ><img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/facebook.10330d8b.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/twitter.a8b930b8.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://fluffy-tarsier-9926b4.netlify.app/assets/instagram.66839a96.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js-files/main.js"></script>
+  </body>
+</html>
